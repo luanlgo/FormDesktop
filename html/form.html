@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title>Form Desktop</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet/less" type="text/css" href="../css/styleDesktop.less">
+        
+        <!-- Select Style -->
+        <link rel="stylesheet/less" type="text/css" href="../css/selectDesktop.less">
+
+        <link rel="stylesheet" href="../fonts/stylesheet.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <!-- Select plugin css -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <form id="contact-form" class="contact-form content-form-desktop clear-fix" name="contact-form" >
+                    <div class="col-sm-10 col-xs-12">
+                        <div class="row">
+                            <div class="margin-on-desktop clear-fix">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="form-group-desktop clear-fix">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <label class="representation-desktop">Sexo: </label>
+                                                    <select class="basic-j2 js-select-2-basic-desktop form-control-select-desktop">
+                                                        <option value="MC">Masculino</option>
+                                                        <option value="FM">Feminino</option>
+                                                        <option value="UD">Indefinido</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-esquerda-desktop col-md-6 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="form-group-desktop clear-fix">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <label for="codigo" class="representation-desktop">Codigo: *</label>
+                                                    <input type="text" name="codigo" id="codigo" class="form-control input-text-desktop codigo" required="required" >
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <div class="form-group-desktop clear-fix">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <label for="apelido" class="representation-desktop">Apelido: *</label>
+                                                    <input type="text" name="apelido" id="apelido" class="form-control input-text-desktop" required="required" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group-desktop clear-fix">
+                                            <div class="mobile-full-width-desktop col-xs-4">
+                                                <div class="row">
+                                                    <label for="id" class="representation-desktop">id: *</label>
+                                                    <input type="text" name="id" id="id" class="form-control input-text-desktop codigo" required="required" >
+                                                </div>
+                                            </div>
+                                            <div class="mobile-full-width-desktop margin-adjust-desktop col-xs-8">
+                                                <div class="row">
+                                                    <label for="cd" class="representation-desktop">cd: *</label>
+                                                    <input type="text" name="cd" id="cd" class="form-control input-text-desktop" required="required" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-direita-desktop col-md-6 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="form-group-desktop clear-fix">
+                                            <div class="mobile-full-width-desktop col-xs-5">
+                                                <div class="row">
+                                                    <label for="cep" class="representation-desktop">CEP: *</label>
+                                                    <input type="text" name="cep" id="cep" class="form-control input-text-desktop codigo" required="required" >
+                                                </div>
+                                            </div>
+                                            <div class="mobile-full-width-desktop margin-adjust-desktop col-xs-7">
+                                                <div class="row">
+                                                    <label for="cpf" class="representation-desktop">CPF: *</label>
+                                                    <input type="text" name="cpf" id="cpf" class="form-control input-text-desktop" required="required" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group-desktop clear-fix">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <label for="complemento" class="representation-desktop">Complemento: *</label>
+                                                    <input type="text" name="complemento" id="complemento" class="form-control input-text-desktop" required="required" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group-desktop clear-fix">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <label for="outros" class="representation-desktop">Como Ficou Sabendo?</label>
+                                                    <div class="contente-select-desktop">
+                                                        <div class="col-xs-6 mobile-auto-width-desktop">
+                                                            <label for="revista" class="representation-fullwidth-desktop representation-check-desktop mobile-auto-width-desktop">Revista </label>
+                                                            <input class="check-text-desktop" type="checkbox" id="revista" name="revista" value="revista" checked="yes"/>
+                                                        </div>
+                                                        <div class="col-xs-6 mobile-auto-width-desktop">
+                                                            <label for="jornal" class="representation-fullwidth-desktop representation-check-desktop mobile-auto-width-desktop">Jornal </label>
+                                                            <input class="check-text-desktop" type="checkbox" id="jornal" name="jornal" value="jornal" checked="yes"/>
+                                                        </div>
+                                                        <div class="col-xs-6 mobile-auto-width-desktop">
+                                                            <label for="internet" class="representation-fullwidth-desktop representation-check-desktop mobile-auto-width-desktop">Internet </label>
+                                                            <input class="check-text-desktop" type="checkbox" id="internet" name="internet" value="internet" checked="yes"/>
+                                                        </div>
+                                                        <div class="col-xs-6 mobile-auto-width-desktop">
+                                                            <label for="amigos" class="representation-fullwidth-desktop representation-check-desktop mobile-auto-width-desktop">Amigos </label>
+                                                            <input class="check-text-desktop" type="checkbox" id="amigos" name="amigos" value="amigos" checked="yes"/>
+                                                        </div>
+
+                                                    </div>
+                                                    <label for="outros" class="representation-desktop">Outros: </label>
+                                                    <div class="contente-select-desktop">
+                                                        <div class="col-xs-12">
+                                                            <div class="row">
+                                                                <textarea id="outros" name="outros" class="form-control textarea-text-desktop" rows="10"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-form-desktop-botoes col-sm-2 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="margin-on-desktop">
+                                        <button type="button" name="" value="" class="btn-default-desktop"><i class="fas fa-check icon-color-check-desktop"></i>Continuar</button>
+                                        <button type="button" name="" value="" class="btn-default-desktop"><i class="fas fa-ban icon-color-back-desktop"></i>Voltar</button>
+                                        <button type="button" name="" value="" class="btn-default-desktop"><i class="fas fa-broom icon-color-clear-desktop"></i>Limpar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <!-- Jquery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <!-- Select plugin js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <!-- Less -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
+    
+    <script type="application/javascript" src="../js/init-components.js"></script>
+</html>
