@@ -2,12 +2,10 @@
     <head>
         <title>Form Desktop</title>
         <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/styleDesktop.less">
-        <!-- Select Style -->
-        <link rel="stylesheet" href="../css/selectDesktop.less">
+        <link rel="stylesheet" href="../css/styleDesktop.css">
+        <link rel="stylesheet" href="../css/styleFix.css">
 
-        <link rel="stylesheet" href="../fonts/style.less">
-        <link rel="stylesheet" href="../fonts/stylesheet.less">
+        <link rel="stylesheet" href="../fonts/stylesheet.css">
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -15,8 +13,8 @@
         <!-- Select plugin css -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 
-        <!-- Less -->
-        <link rel="stylesheet/less" type="text/css" href="styles.less" />
+        <!-- Popup plugin css -->
+        <link rel="stylesheet" href="https://magnific-popup/magnific-popup.css">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -31,7 +29,7 @@
                                     <div class="margin-on-desktop clear-fix">
                                         <div class="col-xs-12">
                                             <div class="row">
-                                                <div class="form-group-desktop clear-fix">
+                                                <div class="form-group-desktop clear-fix clear-fix">
                                                     <select class="js-select-2-basic-desktop-fullwidth basic-j2 form-control-select-desktop">
                                                         <option value="PF">Fisica</option>
                                                         <option value="PJ">Juridica</option>
@@ -41,14 +39,14 @@
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
                                             <div class="row">
-                                                <div class="form-group-desktop clear-fix">
+                                                <div class="form-group-desktop clear-fix clear-fix">
                                                     <input type="text" name="codigo" id="codigo" class="form-control input-text-desktop codigo" required="required" >
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
                                             <div class="row">
-                                                <div class="form-group-desktop clear-fix">
+                                                <div class="form-group-desktop clear-fix clear-fix">
                                                     <label for="codigo" class="representation-desktop">Codigo: *</label>
                                                 </div>
                                             </div>
@@ -72,37 +70,115 @@
                                     <div class="margin-on-desktop clear-fix">
                                         <div class="col-xs-12">
                                             <div class="row">
-                                                <div class="form-group-desktop">
-                                                    <table class="table-content-desktop">
+                                                <div class="form-group-desktop clear-fix">
+                                                    <table class="table-content-desktop fullwidth-desktop">
                                                         <thead>
                                                             <tr>
-                                                                <th class="title-table" colspan="2">Windows 7</th>
+                                                                <th class="title-table text-center border-bottom" colspan="2">
+                                                                    Windows 7
+                                                                </th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td class="title-table shadow-right">Da edição</td>
-                                                                <td class="title-table">Para a edição</td>
+                                                                <td class="title-table border-right text-center">
+                                                                    Da edição
+                                                                </td>
+                                                                <td class="title-table text-center">
+                                                                    Para a edição
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="shadow-right">Windows 7 Starter</td>
-                                                                <td rowspan="3">Windows 10 Home</td>
+                                                                <td class="text-left">
+                                                                    Windows 7 Starter
+                                                                </td>
+                                                                <td class="border-left" rowspan="3">
+                                                                    Windows 10 Home
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="shadow-right">Windows 7 Home Basic</td>
+                                                                <td class="text-left">
+                                                                    Windows 7 Home Basic
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="shadow-right">Windows 7 Home Premium</td>
+                                                                <td class="text-left">
+                                                                    Windows 7 Home Premium
+                                                                </td>
                                                             </tr>
                                                             <tr>
                                                                 <td colspan="2" class="space-td"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="shadow-right">Windows 7 Professional</td>
-                                                                <td>Windows 10 Pro</td>
+                                                                <td class="text-left">
+                                                                    Windows 7 Professional
+                                                                </td>
+                                                                <td class="border-left" rowspan="2">
+                                                                    Windows 10 Pro
+                                                                </td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="shadow-right">Windows 7 Ultimate</td>
+                                                                <td class="text-left">
+                                                                    Windows 7 Ultimate
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margin-on-desktop clear-fix">
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="form-group-desktop clear-fix">
+                                                    <table class="table-content-desktop fullwidth-desktop">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="title-table text-center border-bottom" colspan="2">
+                                                                    Windows 7
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="title-table border-right text-center">
+                                                                    Da edição
+                                                                </td>
+                                                                <td class="title-table text-center">
+                                                                    Para a edição
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left">
+                                                                    Windows 7 Starter
+                                                                </td>
+                                                                <td class="border-left">
+                                                                    Windows 10 Home
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left" rowspan="3">
+                                                                    Windows 7 Home Basic
+                                                                </td>
+                                                                <td class="text-left">
+                                                                    Doce
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left">
+                                                                    Batata
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="border-left" rowspan="2">
+                                                                    Windows 10 Pro
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left">
+                                                                    Windows 7 Ultimate
+                                                                </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -112,13 +188,125 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-6"></div>
+                            <div class="col-xs-6">
+                                <div class="row">
+                                    <div class="margin-on-desktop clear-fix">
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="form-group-desktop clear-fix">
+                                                    <table class="table-content-desktop fullwidth-desktop">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="title-table text-center border-bottom" colspan="2">
+                                                                    Windows 7
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="title-table border-right text-center">
+                                                                    Da edição
+                                                                </td>
+                                                                <td class="title-table text-center">
+                                                                    Para a edição
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left">
+                                                                    Windows 7 Starter
+                                                                </td>
+                                                                <td class="border-left">
+                                                                    Windows 10 Home
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left" rowspan="2">
+                                                                    Windows 7 Home Basic
+                                                                </td>
+                                                                <td class="text-left">
+                                                                    Doce
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left">
+                                                                    Batata
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="title-table border-right text-center">
+                                                                    Da edição
+                                                                </td>
+                                                                <td class="title-table text-center">
+                                                                    Para a edição
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left">
+                                                                    Windows 7 Starter
+                                                                </td>
+                                                                <td class="border-left" rowspan="3">
+                                                                    Windows 10 Home
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left">
+                                                                    Windows 7 Home Basic
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left">
+                                                                    Windows 7 Home Premium
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="2" class="space-td"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left">
+                                                                    Windows 7 Professional
+                                                                </td>
+                                                                <td class="border-left" rowspan="2">
+                                                                    Windows 10 Pro
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-left">
+                                                                    Windows 7 Ultimate
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="margin-on-desktop clear-fix">
+                                        <div class="content-form-desktop-botoes col-xs-12">
+                                            <div class="row">
+                                                <div class="form-group-desktop clear-fix">
+                                                    <div class="col-xs-6">
+                                                        <div class="row">
+                                                            <button type="button"  data="popup" name="" value="" class="btn-default-desktop"><i class="fas fa-check icon-color-check-desktop"></i>Continuar</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="row">
+                                                            <label for="cd" class="representation-desktop">cd: *</label>
+                                                        </div>
+                                                    </div>          
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </form>
             </div>
         </div>
+
+        
     </body>
 
     <!-- Jquery -->
@@ -126,9 +314,16 @@
 
     <!-- Select plugin js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    
-    <!-- Less -->
+
+    <!-- Popup plugin js -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Popup plugin js -->
+    <script src="https://magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- Less
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
+    -->
 
     <script type="application/javascript" src="../js/init-components.js"></script>
 </html>
