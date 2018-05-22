@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <select>
+            <option value="post">Post</option>
+            <option value="comments">Comments</option>
+            <option value="albuns">Albuns</option>
+            <option value="photos">Photos</option>
+            <option value="todos">Todos</option>
+            <option value="user">User</option>
+        </select>
+
+        <table class="tabela-desktop">
+
+        </table>
+    </body>
+
+    <!-- Jquery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <script>
+        $(document).on("change", "select", function(evnt, option){
+            var index = "";
+            $( "option:selected" ).each(function() {
+                index = $(this).index();
+            });
+            console.log(index);
+            var table = $('.tabela-desktop');
+            switch(index) {
+                case 0:
+                    $.ajax({
+                        type: "GET",
+                        contentType: "application/json; charset=utf-8",
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        url: "https://jsonplaceholder.typicode.com/posts",
+                        data: {
+                        },
+                        dataType: "json",
+                        success: function (data) {
+                            //title
+                            $.each(data, function() {
+                                table.append("<tr></tr>");
+                                $.each(this, function(index, valor) {
+                                    table.find('tr').append("<th>"+index+"</th>");
+                                });
+                                return false;
+                            });
+
+                            //conteudo
+                            $.each(data, function() {
+                                table.append("<tr></tr>");
+                                $.each(this, function(index, valor){
+                                    table.find('tr').append("<td>"+valor+"</td>");
+                                    console.log(valor);
+                                });
+                                return false;
+                            });
+                        },
+                        error: function (error) {
+                            console.log(error.error);
+                        }
+                    });
+                break;
+                case 1:
+                    /*$.ajax({
+                        type: "GET",
+                        contentType: "application/json; charset=utf-8",
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        url: "https://jsonplaceholder.typicode.com/comments",
+                        data: {
+                        },
+                        dataType: "json",
+                        success: function (data) { 
+                            console.log(data);
+                        },
+                        error: function (error) {
+                            console.log(error.error);
+                        }
+                    });*/
+                break;
+            }
+            
+        });
+
+    </script>
+
+</html>

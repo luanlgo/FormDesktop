@@ -14,7 +14,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 
         <!-- Popup plugin css -->
-        <link rel="stylesheet" href="https://magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -57,7 +57,11 @@
                             <div class="content-form-desktop-botoes col-xs-12 col-sm-2">
                                 <div class="row">
                                     <div class="margin-on-desktop">
-                                        <button type="button" name="" value="" class="btn-default-desktop"><i class="fas fa-check icon-color-check-desktop"></i>Continuar</button>
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <button type="button" name="" value="" class="btn-default-desktop"><i class="fas fa-check icon-color-check-desktop"></i>Continuar</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +290,11 @@
                                                 <div class="form-group-desktop clear-fix">
                                                     <div class="col-xs-6">
                                                         <div class="row">
-                                                            <button type="button"  data="popup" name="" value="" class="btn-default-desktop"><i class="fas fa-check icon-color-check-desktop"></i>Continuar</button>
+                                                            <!-- Caso queria um html externo
+                                                                No "data-src" coloque a url do html.
+                                                                Exemplo: data-src="http://codepen.io/fancyapps/full/jyEGGG/"
+                                                            -->
+                                                            <button type="button" data-fancybox data-src="#hidden-content" name="" value="" class="btn-default-desktop"><i class="fas fa-check icon-color-check-desktop"></i>Continuar</button>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-6">
@@ -306,6 +314,10 @@
             </div>
         </div>
 
+        <div style="display: none;" id="hidden-content">
+            <h2>Hello</h2>
+            <p>You are awesome.</p>
+        </div>
         
     </body>
 
@@ -319,7 +331,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
     <!-- Popup plugin js -->
-    <script src="https://magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 
     <!-- Less
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js" ></script>
