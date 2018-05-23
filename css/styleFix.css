@@ -47,6 +47,10 @@ i.fas {
     text-align: left;
 }
 
+.cursor-pointer-desktop {
+    cursor: pointer;
+}
+
 .border-top {
     border-top: 1px solid #FFF;
 }

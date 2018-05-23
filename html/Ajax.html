@@ -30,6 +30,8 @@
             <option value="user">User</option>
         </select>
 
+        <button class="button-ajax" type="button">Ajax :) </button>
+
         <table class="table-content-desktop fullwidth-desktop">
             <thead></thead>
             <tbody></tbody>
@@ -40,135 +42,25 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
     <script>
-        $(document).on("change", "select", function(evnt, option){
-            var index = "";
-            $( "option:selected" ).each(function() {
-                index = $(this).index();
+        $(document).on("click", ".button-ajax", function(){
+            $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                url: "https://jsonplaceholder.typicode.com/posts",
+                data: {
+                },
+                dataType: "json",
+                success: function (data) {
+                    removeTable();
+                    indexTableAction(data);
+                },
+                error: function (error) {
+                    console.log(error.error);
+                }
             });
-            switch(index) {
-                case 0:
-                    $.ajax({
-                        type: "GET",
-                        contentType: "application/json; charset=utf-8",
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded'
-                        },
-                        url: "https://jsonplaceholder.typicode.com/posts",
-                        data: {
-                        },
-                        dataType: "json",
-                        success: function (data) {
-                            removeTable();
-                            indexTableAction(data);
-                        },
-                        error: function (error) {
-                            console.log(error.error);
-                        }
-                    });
-                break;
-                case 1:
-                    $.ajax({
-                        type: "GET",
-                        contentType: "application/json; charset=utf-8",
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded'
-                        },
-                        url: "https://jsonplaceholder.typicode.com/comments",
-                        data: {
-                        },
-                        dataType: "json",
-                        success: function (data) {
-                            removeTable();
-                            indexTableAction(data);
-                        },
-                        error: function (error) {
-                            console.log(error.error);
-                        }
-                    });
-                break;
-                case 2:
-                    $.ajax({
-                        type: "GET",
-                        contentType: "application/json; charset=utf-8",
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded'
-                        },
-                        url: "https://jsonplaceholder.typicode.com/albums",
-                        data: {
-                        },
-                        dataType: "json",
-                        success: function (data) {
-                            removeTable();
-                            indexTableAction(data);
-                        },
-                        error: function (error) {
-                            console.log(error.error);
-                        }
-                    });
-                break;
-                case 3:
-                    $.ajax({
-                        type: "GET",
-                        contentType: "application/json; charset=utf-8",
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded'
-                        },
-                        url: "https://jsonplaceholder.typicode.com/photos",
-                        data: {
-                        },
-                        dataType: "json",
-                        success: function (data) {
-                            removeTable();
-                            indexTableAction(data);
-                        },
-                        error: function (error) {
-                            console.log(error.error);
-                        }
-                    });
-                break;
-                case 4:
-                    $.ajax({
-                        type: "GET",
-                        contentType: "application/json; charset=utf-8",
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded'
-                        },
-                        url: "https://jsonplaceholder.typicode.com/todos",
-                        data: {
-                        },
-                        dataType: "json",
-                        success: function (data) {
-                            removeTable();
-                            indexTableAction(data);
-                        },
-                        error: function (error) {
-                            console.log(error.error);
-                        }
-                    });
-                break;
-                case 5:
-                    $.ajax({
-                        type: "GET",
-                        contentType: "application/json; charset=utf-8",
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded'
-                        },
-                        url: "https://jsonplaceholder.typicode.com/users",
-                        data: {
-                        },
-                        dataType: "json",
-                        success: function (data) {
-                            removeTable();
-                            indexTableAction(data);
-                        },
-                        error: function (error) {
-                            console.log(error.error);
-                        }
-                    });
-                break;
-            }
-
-            
         });
 
         function indexTableAction(data) {
