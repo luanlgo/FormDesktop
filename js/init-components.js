@@ -4,6 +4,14 @@ $(document).ready(function(){
         minimumResultsForSearch: -1
     });
 
-    $('.search-j2').select2();  
+    $('.search-j2').select2();
+
+    $(".popup-desktop").fancybox({
+        type: "inline"
+    });
+
+    $(".close-fancybox").on("click", function(){
+        $.fancybox.close();
+    })
     
 });
